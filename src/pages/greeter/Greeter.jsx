@@ -22,13 +22,15 @@ const Greeter = () => {
         <img
           className="action-buttons-greeter"
           src={
-            isDarkTheme ? "./actionButtonsDark.svg" : "./actionButtonsLight.svg"
+            isDarkTheme
+              ? "/teddyos/actionButtonsDark.svg"
+              : "/teddyos/actionButtonsLight.svg"
           }
           alt="Action buttons"
         />
         <img
           className="picMe"
-          src={isDarkTheme ? "./picDark.png" : "./picLight.png"}
+          src={isDarkTheme ? "/teddyos/picDark.png" : "/teddyos/picLight.png"}
           alt="Profile"
         />
       </div>
