@@ -1,0 +1,67 @@
+.statusbar {
+  position: fixed;
+  top: 8px;
+  left: 8px;
+  right: 8px;
+  height: 43px;
+  padding-left: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  border-radius: 30px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  z-index: 10;
+  transition: background-color 0.5s, color 0.5s;
+  box-shadow: 0 0 10px #414040;
+
+  .widgets {
+    display: flex;
+    align-items: center;
+
+    img {
+      width: 140px;
+      height: 90px;
+      padding-right: 32px;
+    }
+  }
+
+  // Dark theme styles
+  body.dark-theme & {
+    background-color: #54858b;
+    .date {
+      color: #faf5cc;
+    }
+    .tt-logo,
+    .widgets-svg {
+      fill: #faf5cc;
+    }
+  }
+
+  // Light theme styles
+  body.light-theme & {
+    background-color: #bebdc8;
+    .date {
+      color: #383837;
+    }
+    .tt-logo,
+    .widgets-svg {
+      fill: #383837;
+    }
+  }
+
+  // Common styles for both themes
+  .tt-logo,
+  .widgets-svg {
+    display: flex;
+    align-items: center;
+  }
+
+  .date {
+    padding-left: 90px;
+    font-size: 26px;
+    font-weight: bold;
+  }
+}

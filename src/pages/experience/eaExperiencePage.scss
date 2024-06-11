@@ -1,0 +1,135 @@
+body .experience-window-ea {
+  width: 800px;
+  height: 460px;
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  grid-template-rows: auto 1fr;
+  background-color: var(--ea-background-color);
+  border-radius: 30px;
+  padding: 20px;
+  gap: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  transition: transform 0.2s ease;
+
+  &.shrink .content-panel-ea {
+    animation: shrinkDown 0.2s backwards;
+  }
+
+  &.dark-theme {
+    --ea-background-color: #406368;
+    --ea-accent-color: #c3b675;
+    color: #faf5cc;
+  }
+
+  &.light-theme {
+    --ea-background-color: #9292c9;
+    --ea-accent-color: #d3d3d8;
+    color: #383837;
+  }
+
+  .accent-panel {
+    background-color: var(--ea-accent-color);
+    border-radius: 30px 0 0 30px;
+    position: relative;
+    width: 180px;
+    height: 500px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin: -20px;
+
+    h1 {
+      font-size: 26px;
+      text-align: start;
+    }
+  }
+
+  .experience-page-ea {
+    opacity: 0;
+    transform: scale(1);
+    transition: opacity 0.1s ease, transform 0.1s ease;
+
+    &.animate {
+      opacity: 0.5;
+      transform: scale(4);
+    }
+  }
+
+  .content-panel-ea {
+    grid-column: 2;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+    color: var(--google-text-color);
+
+    .action-buttons {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      display: flex;
+      height: 16px;
+    }
+    .back-button {
+      position: absolute;
+      top: 20px;
+      left: 228px;
+      height: 36px;
+      cursor: pointer;
+    }
+
+    .experience-description {
+      .ea-logo {
+        width: 48px;
+        height: 48px;
+        position: absolute;
+        top: 60px;
+        right: 10px;
+        padding-top: 50px;
+        padding-right: 32px;
+      }
+
+      .ea-p,
+      .ea-span {
+        font-weight: bold;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-end;
+        padding-left: 6px;
+      }
+      .ea-span {
+        padding-top: 80px;
+        font-size: 26px;
+      }
+      .ea-p {
+        font-size: 20px;
+        margin-top: -2px;
+        margin-bottom: -10px;
+      }
+
+      .text-separator {
+        width: 96%;
+      }
+
+      .date-ea {
+        font-weight: bold;
+      }
+      .jd-ea {
+        font-size: 18px;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+@keyframes shrinkDown {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0.6);
+  }
+}

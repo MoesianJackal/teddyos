@@ -1,0 +1,166 @@
+body .experience-window {
+  width: 800px;
+  height: 460px;
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  grid-template-rows: auto 1fr;
+  background-color: var(--experience-background-color);
+  border-radius: 30px;
+  padding: 20px;
+  gap: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 100px;
+  left: 100px;
+
+  &.reverse .content-panel {
+    animation: scaleDown 0.5s forwards;
+  }
+
+  &.dark-theme {
+    --experience-background-color: #588972;
+    --accent-background-color: #c3b675;
+    --text-color: #faf5cc;
+    --card1-background-color: #713c2c;
+    --card2-background-color: #345344;
+    --card3-background-color: #406368;
+  }
+
+  &.light-theme {
+    --experience-background-color: #bebdc8;
+    --accent-background-color: #d3d3d8;
+    --text-color: #333;
+    --card1-background-color: #d09898;
+    --card2-background-color: #98b1a5;
+    --card3-background-color: #9292c9;
+  }
+
+  .accent-panel {
+    background-color: var(--accent-background-color);
+    border-radius: 30px 0 0 30px;
+    position: relative;
+    width: 180px;
+    height: 500px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    color: var(--text-color);
+    margin: -20px;
+
+    h1 {
+      font-size: 26px;
+      text-align: start;
+    }
+  }
+
+  .content-panel {
+    grid-column: 2;
+    position: relative;
+
+    .action-buttons {
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      display: flex;
+      height: 16px;
+    }
+    p,
+    span {
+      font-weight: bold;
+      top: 140px;
+      display: inline;
+      margin-left: 20px;
+      padding-left: 20px;
+    }
+
+    p {
+      font-size: 20px;
+      color: var(--text-color);
+    }
+
+    span {
+      font-size: 26px;
+      color: var(--text-color);
+    }
+
+    .carousel-container {
+      width: 500px;
+      height: 200px;
+      top: 50px;
+      left: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+
+      &.reverse .card {
+        animation: scaleDown 0.5s forwards;
+      }
+    }
+
+    .google-logo,
+    .microsoft-logo,
+    .ea-logo {
+      width: 48px;
+      height: 48px;
+      position: absolute;
+      top: 2px;
+      right: 10px;
+      padding-top: 20px;
+      padding-right: 24px;
+    }
+  }
+
+  .card {
+    width: 600px;
+    height: 160px;
+    border-radius: 60px;
+    font-size: 1.2rem;
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    cursor: pointer;
+    user-select: none;
+    position: absolute;
+    transition: transform 0.2s ease, width 0.2s ease, height 0.2s ease;
+
+    &.expand {
+      transform: scale(1.1, 1.4);
+      width: 600px;
+      height: 358px;
+      border-radius: 30px;
+      z-index: 4;
+      position: absolute;
+    }
+  }
+
+  .card1 {
+    background-color: var(--card1-background-color);
+  }
+
+  .card2 {
+    background-color: var(--card2-background-color);
+  }
+
+  .card3 {
+    background-color: var(--card3-background-color);
+  }
+
+  .top {
+    transform: translateY(10%);
+    z-index: 0;
+  }
+
+  .middle {
+    transform: translateY(55%);
+    z-index: 2;
+  }
+
+  .bottom {
+    transform: translateY(106%);
+    z-index: 3;
+  }
+}

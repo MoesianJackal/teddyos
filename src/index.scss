@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap");
+
+:root {
+  font-family: "DM Sans";
+  --font-fascinate: Fascinate;
+  line-height: 1.5;
+  font-weight: 400;
+
+  --color-dark-background: #2e2e30;
+
+  --color-dark-link: #faf5cc;
+  --color-dark-link-hover: #54858b;
+
+  --color-light-background: #a8a8d0;
+
+  --color-light-link: #383837;
+  --color-light-link-hover: #2c7984;
+
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  transition: background-color 0.5s, color 0.5s;
+}
+
+.dark-theme {
+  background-color: var(--color-dark-background);
+  color: var(--color-dark-text);
+
+  a {
+    color: var(--color-dark-link);
+    text-decoration: inherit;
+    font-weight: 600;
+  }
+  a:hover {
+    color: var(--color-dark-link-hover);
+  }
+}
+
+.light-theme {
+  background-color: var(--color-light-background);
+  color: var(--color-light-text);
+
+  a {
+    color: var(--color-light-link);
+    text-decoration: inherit;
+    font-weight: 600;
+  }
+  a:hover {
+    color: var(--color-light-link-hover);
+  }
+}

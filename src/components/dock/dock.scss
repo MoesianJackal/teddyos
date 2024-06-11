@@ -1,0 +1,50 @@
+.dock {
+  background-color: #505050;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  display: flex;
+  flex-direction: row;
+  padding-inline: 20px;
+  padding-top: 14px;
+  border-radius: 24px 24px 0 0;
+  height: 70px;
+
+  & > * + * {
+    margin-inline-start: 14px;
+  }
+
+  .icon {
+    width: 56px;
+    height: 56px;
+    cursor: pointer;
+  }
+
+  .icon::after {
+    content: attr(title);
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    background-color: #2e2e30;
+    font-size: 24px;
+    padding: 55px;
+  }
+}
+.separator {
+  height: 60px;
+}
+
+body {
+  transition: background-color 0.5s, color 0.5s;
+}
+
+.dark-theme {
+  background-color: #2e2e30;
+}
+
+.light-theme {
+  background-color: #a8a8d0;
+}
