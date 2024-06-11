@@ -30,14 +30,20 @@ const MicrosoftExperiencePage = () => {
       <div className="content-panel-microsoft">
         <img
           className="back-button"
-          src={isDarkTheme ? "./backArrowDark.svg" : "./backArrowLight.svg"}
+          src={
+            isDarkTheme
+              ? "/teddyos/backArrowDark.svg"
+              : "/teddyos/backArrowLight.svg"
+          }
           alt="back button"
           onClick={handleBackClick}
         />
         <img
           className="action-buttons"
           src={
-            isDarkTheme ? "./actionButtonsDark.svg" : "./actionButtonsLight.svg"
+            isDarkTheme
+              ? "/teddyos/actionButtonsDark.svg"
+              : "/teddyos/actionButtonsLight.svg"
           }
           alt="action buttons"
         />
@@ -48,8 +54,8 @@ const MicrosoftExperiencePage = () => {
             className="text-separator"
             src={
               isDarkTheme
-                ? "./textSeparatorDark.svg"
-                : "./textSeparatorLight.svg"
+                ? "/teddyos/textSeparatorDark.svg"
+                : "/teddyos/textSeparatorLight.svg"
             }
             alt="text separator line"
           />
@@ -65,7 +71,9 @@ const MicrosoftExperiencePage = () => {
           </p>
           <img
             className="microsoft-logo"
-            src={isDarkTheme ? "./msftDark.svg" : "./msftLight.svg"}
+            src={
+              isDarkTheme ? "/teddyos/msftDark.svg" : "/teddyos/msftLight.svg"
+            }
             alt="microsoft logo"
           />
         </div>

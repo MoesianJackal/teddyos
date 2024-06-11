@@ -65,7 +65,9 @@ const MyExperience = () => {
         <img
           className="action-buttons"
           src={
-            isDarkTheme ? "./actionButtonsDark.svg" : "./actionButtonsLight.svg"
+            isDarkTheme
+              ? "/teddyos/actionButtonsDark.svg"
+              : "/teddyos/actionButtonsLight.svg"
           }
           alt="action buttons"
         />
@@ -80,7 +82,11 @@ const MyExperience = () => {
             <p>Developer Support Engineer for Google Cloud</p>
             <img
               className="google-logo"
-              src={isDarkTheme ? "./googleDark.svg" : "./googleLight.svg"}
+              src={
+                isDarkTheme
+                  ? "/teddyos/googleDark.svg"
+                  : "/teddyos/googleLight.svg"
+              }
               alt="Google logo"
             />
           </div>
@@ -94,7 +100,9 @@ const MyExperience = () => {
             <p>AI & IoT Developer Support Engineer</p>
             <img
               className="microsoft-logo"
-              src={isDarkTheme ? "./msftDark.svg" : "./msftLight.svg"}
+              src={
+                isDarkTheme ? "/teddyos/msftDark.svg" : "/teddyos/msftLight.svg"
+              }
               alt="Microsoft logo"
             />
           </div>
@@ -108,7 +116,7 @@ const MyExperience = () => {
             <p>QV Tester</p>
             <img
               className="ea-logo"
-              src={isDarkTheme ? "./eaDark.svg" : "./eaLight.svg"}
+              src={isDarkTheme ? "/teddyos/eaDark.svg" : "/teddyos/eaLight.svg"}
               alt="EA logo"
             />
           </div>

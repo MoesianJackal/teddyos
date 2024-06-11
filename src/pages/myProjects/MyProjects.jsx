@@ -35,7 +35,9 @@ const MyProjects = () => {
         <img
           className="action-buttons"
           src={
-            isDarkTheme ? "./actionButtonsDark.svg" : "./actionButtonsLight.svg"
+            isDarkTheme
+              ? "/teddyos/actionButtonsDark.svg"
+              : "/teddyos/actionButtonsLight.svg"
           }
           alt="action buttons"
         />
@@ -49,7 +51,11 @@ const MyProjects = () => {
             <p>Work in progress</p>
             <img
               className="terraform-logo"
-              src={isDarkTheme ? "./terraformDark.svg" : "./terraformLight.svg"}
+              src={
+                isDarkTheme
+                  ? "/teddyos/terraformDark.svg"
+                  : "/teddyos/terraformLight.svg"
+              }
               alt="Terraform Logo"
             />
           </div>
@@ -63,7 +69,11 @@ const MyProjects = () => {
 
             <img
               className="dune-logo"
-              src={isDarkTheme ? "./gamepadDark.svg" : "./gamepadLight.svg"}
+              src={
+                isDarkTheme
+                  ? "/teddyos/gamepadDark.svg"
+                  : "/teddyos/gamepadLight.svg"
+              }
               alt="gamepad"
             />
           </div>
@@ -77,7 +87,11 @@ const MyProjects = () => {
 
             <img
               className="codec-logo"
-              src={isDarkTheme ? "./codecDark.svg" : "./codecLight.svg"}
+              src={
+                isDarkTheme
+                  ? "/teddyos/codecDark.svg"
+                  : "/teddyos/codecLight.svg"
+              }
               alt="codec frequency"
             />
           </div>

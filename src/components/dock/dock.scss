@@ -24,13 +24,6 @@
   .icon::after {
     content: attr(title);
     position: absolute;
-    bottom: 100%;
-    left: 50%;
-    transform: translateX(-50%);
-    white-space: nowrap;
-    background-color: #2e2e30;
-    font-size: 24px;
-    padding: 55px;
   }
 }
 .separator {
