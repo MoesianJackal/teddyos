@@ -67,7 +67,7 @@ const Dock = () => {
         className="icon"
         src={
           isDarkTheme
-            ? "./teddyos/greetingDark.svg"
+            ? "/teddyos/greetingDark.svg"
             : "/teddyos/greetingLight.svg"
         }
         alt="Greeting"

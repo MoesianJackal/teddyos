@@ -52,7 +52,7 @@ const Folders = () => {
           src={
             openFolder === "about"
               ? "/teddyos/folderOpen.svg"
-              : "./folderClosed.svg"
+              : "/teddyos/folderClosed.svg"
           }
           alt="About Me"
         />{" "}
