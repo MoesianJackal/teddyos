@@ -30,14 +30,14 @@ const GoogleExperiencePage = () => {
       <div className="content-panel-google">
         <img
           className="back-button"
-          src={isDarkTheme ? "/backArrowDark.svg" : "/backArrowLight.svg"}
+          src={isDarkTheme ? "./backArrowDark.svg" : "./backArrowLight.svg"}
           alt="back button"
           onClick={handleBackClick}
         />
         <img
           className="action-buttons"
           src={
-            isDarkTheme ? "/actionButtonsDark.svg" : "/actionButtonsLight.svg"
+            isDarkTheme ? "./actionButtonsDark.svg" : "./actionButtonsLight.svg"
           }
           alt="action buttons"
         />
@@ -50,7 +50,9 @@ const GoogleExperiencePage = () => {
           <img
             className="text-separator"
             src={
-              isDarkTheme ? "/textSeparatorDark.svg" : "/textSeparatorLight.svg"
+              isDarkTheme
+                ? "./textSeparatorDark.svg"
+                : "./textSeparatorLight.svg"
             }
             alt="text separator line"
           />
@@ -63,7 +65,7 @@ const GoogleExperiencePage = () => {
           </p>
           <img
             className="google-logo"
-            src={isDarkTheme ? "/googleDark.svg" : "/googleLight.svg"}
+            src={isDarkTheme ? "./googleDark.svg" : "./googleLight.svg"}
             alt="google logo"
           />
         </div>

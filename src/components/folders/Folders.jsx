@@ -26,8 +26,8 @@ const Folders = () => {
         <img
           src={
             openFolder === "experience"
-              ? "/folderOpen.svg"
-              : "/folderClosed.svg"
+              ? "./folderOpen.svg"
+              : "./folderClosed.svg"
           }
           alt="My Experience"
         />{" "}
@@ -39,7 +39,9 @@ const Folders = () => {
       >
         <img
           src={
-            openFolder === "projects" ? "/folderOpen.svg" : "/folderClosed.svg"
+            openFolder === "projects"
+              ? "./folderOpen.svg"
+              : "./folderClosed.svg"
           }
           alt="My Projects"
         />{" "}
@@ -47,7 +49,9 @@ const Folders = () => {
       </a>
       <a href="#About Me" onClick={() => handleNavigation("about", "/aboutMe")}>
         <img
-          src={openFolder === "about" ? "/folderOpen.svg" : "/folderClosed.svg"}
+          src={
+            openFolder === "about" ? "./folderOpen.svg" : "./folderClosed.svg"
+          }
           alt="About Me"
         />{" "}
         About Me

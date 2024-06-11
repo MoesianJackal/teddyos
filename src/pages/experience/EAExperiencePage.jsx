@@ -30,14 +30,14 @@ const EAExperiencePage = () => {
       <div className="content-panel-ea">
         <img
           className="back-button"
-          src={isDarkTheme ? "/backArrowDark.svg" : "/backArrowLight.svg"}
+          src={isDarkTheme ? "./backArrowDark.svg" : "./backArrowLight.svg"}
           alt="back button"
           onClick={handleBackClick}
         />
         <img
           className="action-buttons"
           src={
-            isDarkTheme ? "/actionButtonsDark.svg" : "/actionButtonsLight.svg"
+            isDarkTheme ? "./actionButtonsDark.svg" : "./actionButtonsLight.svg"
           }
           alt="action buttons"
         />
@@ -47,7 +47,9 @@ const EAExperiencePage = () => {
           <img
             className="text-separator"
             src={
-              isDarkTheme ? "/textSeparatorDark.svg" : "/textSeparatorLight.svg"
+              isDarkTheme
+                ? "./textSeparatorDark.svg"
+                : "./textSeparatorLight.svg"
             }
             alt="text separator line"
           />
@@ -61,7 +63,7 @@ const EAExperiencePage = () => {
           </p>
           <img
             className="ea-logo"
-            src={isDarkTheme ? "/eaDark.svg" : "/eaLight.svg"}
+            src={isDarkTheme ? "./eaDark.svg" : "./eaLight.svg"}
             alt="ea logo"
           />
         </div>

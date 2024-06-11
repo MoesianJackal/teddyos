@@ -19,7 +19,7 @@ const AboutMe = () => {
         <img
           className="action-buttons"
           src={
-            isDarkTheme ? "/actionButtonsDark.svg" : "/actionButtonsLight.svg"
+            isDarkTheme ? "./actionButtonsDark.svg" : "./actionButtonsLight.svg"
           }
           alt="action buttons"
         />
