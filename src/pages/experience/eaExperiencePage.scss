@@ -13,6 +13,7 @@ body .experience-window-ea {
   top: 100px;
   left: 100px;
   transition: transform 0.2s ease;
+  overflow: hidden;
 
   &.shrink .content-panel-ea {
     animation: shrinkDown 0.2s backwards;
@@ -40,6 +41,7 @@ body .experience-window-ea {
     align-items: flex-start;
     justify-content: center;
     margin: -20px;
+    overflow: hidden;
 
     h1 {
       font-size: 26px;
@@ -64,6 +66,7 @@ body .experience-window-ea {
     grid-template-rows: 1fr 1fr;
     gap: 20px;
     color: var(--google-text-color);
+    overflow: hidden;
 
     .action-buttons {
       position: absolute;
