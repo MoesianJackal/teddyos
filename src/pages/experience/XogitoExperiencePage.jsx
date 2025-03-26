@@ -59,14 +59,15 @@ const XogitoExperiencePage = () => {
             }
             alt="text separator line"
           />
-          <span className="date-xogito">09.2024 - Present</span>
+          <span className="date-xogito">07.2024 - Present</span>
           <p className="jd-xogito">
             • Provided infrastructure and administrative support to clients with
             the following services: <br></br>• AWS <br></br>• Microsoft 365
             <br></br>• Atlassian products <br></br>• On-prem Windows Server
             administration
-            <br></br>• Monitoring of Linux and Solaris systems <br></br>•
-            Created internal documentation on processes and use of software
+            <br></br>• Monitoring of Linux and Solaris production systems{" "}
+            <br></br>• Creating internal documentation on processes and use of
+            software
           </p>
           <img
             className="xogito-logo"
