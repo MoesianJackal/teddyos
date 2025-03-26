@@ -24,6 +24,7 @@ body .experience-window {
     --card1-background-color: #713c2c;
     --card2-background-color: #345344;
     --card3-background-color: #406368;
+    --card4-background-color: #63698a;
   }
 
   &.light-theme {
@@ -33,6 +34,7 @@ body .experience-window {
     --card1-background-color: #d09898;
     --card2-background-color: #98b1a5;
     --card3-background-color: #9292c9;
+    --card4-background-color: #a6c1c7;
   }
 
   .accent-panel {
@@ -101,7 +103,8 @@ body .experience-window {
 
     .google-logo,
     .microsoft-logo,
-    .ea-logo {
+    .ea-logo,
+    .xogito-logo {
       width: 48px;
       height: 48px;
       position: absolute;
@@ -148,7 +151,9 @@ body .experience-window {
   .card3 {
     background-color: var(--card3-background-color);
   }
-
+  .card4 {
+    background-color: var(--card4-background-color);
+  }
   .top {
     transform: translateY(10%);
     z-index: 0;

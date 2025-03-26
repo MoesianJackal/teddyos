@@ -14,6 +14,7 @@ import MyProjects from "./pages/myProjects/MyProjects";
 import GoogleExperiencePage from "./pages/experience/GoogleExperiencePage";
 import MicrosoftExperiencePage from "./pages/experience/MicrosoftExperiencePage";
 import EAExperiencePage from "./pages/experience/EAExperiencePage";
+import XogitoExperiencePage from "./pages/experience/XogitoExperiencePage";
 import { ThemeProvider } from "./ThemeContext";
 
 const App = () => {
@@ -43,6 +44,10 @@ const App = () => {
                 element={<MicrosoftExperiencePage />}
               />
               <Route path="/experience/ea" element={<EAExperiencePage />} />
+              <Route
+                path="/experience/xogito"
+                element={<XogitoExperiencePage />}
+              />
               <Route path="/" element={<Greeter />} />
               <Route path="*" element={<Navigate to="/" />} />
             </Routes>

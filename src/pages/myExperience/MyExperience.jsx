@@ -9,11 +9,11 @@ const MyExperience = () => {
     const savedPositions = localStorage.getItem("positions");
     return savedPositions
       ? JSON.parse(savedPositions)
-      : ["top", "middle", "bottom"];
+      : ["top", "middle", "bottom, bottom"];
   });
   const [clickedIndex, setClickedIndex] = useState(null); // State to track the clicked card
   const [reverse, setReverse] = useState(false); // State to track reverse animation
-  const cardClasses = ["card1", "card2", "card3"];
+  const cardClasses = ["card1", "card2", "card3", "card4"]; // Array of card classes
   const navigate = useNavigate();
   const location = useLocation();
 
@@ -32,20 +32,37 @@ const MyExperience = () => {
     localStorage.setItem("positions", JSON.stringify(positions));
   }, [positions]);
 
+  // const handleCardClick = (index) => {
+  //   if (positions[index] === "middle") {
+  //     setPositions([positions[1], positions[2], positions[0]]);
+  //   } else if (positions[index] === "bottom") {
+  //     const routes = [
+  //       "/experience/google",
+  //       "/experience/microsoft",
+  //       "/experience/ea",
+  //     ];
+  //     const selectedRoute = routes[index];
+  //     setClickedIndex(index);
+  //     setTimeout(() => {
+  //       navigate(selectedRoute);
+  //     }, 160); // Delay navigation to allow animation to complete
+  //   }
+  // };
   const handleCardClick = (index) => {
     if (positions[index] === "middle") {
-      setPositions([positions[1], positions[2], positions[0]]);
+      setPositions([positions[1], positions[2], positions[3], positions[0]]);
     } else if (positions[index] === "bottom") {
       const routes = [
         "/experience/google",
         "/experience/microsoft",
         "/experience/ea",
+        "/experience/xogito",
       ];
       const selectedRoute = routes[index];
       setClickedIndex(index);
       setTimeout(() => {
         navigate(selectedRoute);
-      }, 160); // Delay navigation to allow animation to complete
+      }, 160);
     }
   };
 
@@ -118,6 +135,24 @@ const MyExperience = () => {
               className="ea-logo"
               src={isDarkTheme ? "/teddyos/eaDark.svg" : "/teddyos/eaLight.svg"}
               alt="EA logo"
+            />
+          </div>
+          <div
+            className={`card ${positions[3]} ${cardClasses[3]} ${
+              clickedIndex === 3 ? "expand" : ""
+            }`}
+            onClick={() => handleCardClick(3)}
+          >
+            <span>Xogito</span>
+            <p>System Service Support Engineer</p>
+            <img
+              className="xogito-logo"
+              src={
+                isDarkTheme
+                  ? "/teddyos/xogitoDark.svg"
+                  : "/teddyos/xogitoLight.svg"
+              }
+              alt="Xogito logo"
             />
           </div>
         </div>
